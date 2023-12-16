@@ -10,4 +10,8 @@ def urlshortener(url):
     print(s.tinyurl.short(url))
 
 # Main #
-urlshortener(url)
+def main():
+    urlshortener(url)
+
+if __name__ == '__main__':
+    main()
