@@ -16,34 +16,34 @@ def update_distance(user_number, number_guess):
     number_guess = int(number_guess)
     
     if abs(number_guess - user_number) <= 3:
-        return print("Oh you are so close!")
-    elif abs(number_guess - user_number) > 3 and abs(number_guess - user_number) <= 7:
-        return print("Hmm... Quite close, but make a better guess.")
+        return print("Oh you are very close!")
+    elif abs(number_guess-user_number) > 3 and abs(number_guess-user_number) <= 7:
+        return print("Hmm... Quite close, make another guess.")
     else:
-        return print(":/ You are quite off.")
+        return print("Your guess is quite off.")
 
+# Main #
 def main():
-    print("=== Welcome to the Number Guessing game, pick the range! ===")
-    attempts = 0
+    attempts = 0 # Hold total number of attempts of the user.
 
+    print("--- Welcome to the Number Guessing game, pick the range of the numbers you will be guessing! ---")
     x = input("It will start from: ")
     y = input("And will end on: ")
-    number_guess = computer_number(x,y)
-    print(number_guess)
+
+    number_guess = computer_number(x,y) # The number to guess.
     
     while True:
         print("Now make your guess!")
-        user_number = user_guess_number()
+        user_number = user_guess_number() # User's guess.
         attempts +=1
         
         if int(user_number) == number_guess:
             print(f"Congrats, you have found the number! In {attempts} attempts.")
             break
         else:
-            print("Ah you are off the mark. Try again!")
-            print("=== Status ===")
+            print("--- Status ---")
             update_distance(user_number, number_guess)
 
-# Run the program #
+# Execute the program #
 if __name__ == "__main__":
     main()
