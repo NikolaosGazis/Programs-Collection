@@ -12,6 +12,7 @@ A repository dedicated to upload my smaller scale programs.
     
 * C
   - rpc.c: Simulates a game of Rock-Paper-Scissors between the user and the computer.
+  - binDecXchange.c: Converts a decimal to binary and vice versa.
     
 * C++
   - calculator.cpp: A terminal based calculator with addition/subtraction/multiplication/division.
