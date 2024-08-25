@@ -10,6 +10,7 @@ A repository dedicated to upload my smaller scale programs.
   - url_shortener: Shortens a provided url.
   - unit_converter.py: Converts units between US Metric to Metric systems.
   - blackjack.py: Simulates a game of Blackjack between the user and the Dealer-Computer.
+  - bet_master.py: Simulates a virtual sports betting.
     
 * C
   - rpc.c: Simulates a game of Rock-Paper-Scissors between the user and the computer.
