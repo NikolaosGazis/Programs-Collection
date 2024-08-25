@@ -9,6 +9,7 @@ A repository dedicated to upload my smaller scale programs.
   - palindrome.py: Check if a string the user provides is a palindrome.
   - url_shortener: Shortens a provided url.
   - unit_converter.py: Converts units between US Metric to Metric systems.
+  - blackjack.py: Simulates a game of Blackjack between the user and the Dealer-Computer.
     
 * C
   - rpc.c: Simulates a game of Rock-Paper-Scissors between the user and the computer.
