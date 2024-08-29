@@ -9,8 +9,15 @@ def menu():
     print("0. Exit\n")
     
 def rules():
-    pass
-    
+    print("1. The objective is to have a score closer to 21 as possible while the dealer and you, if you reach or go further than that, you go bust .") 
+    print("2. Number cards are counted at their face value, Face cards are valued at 10 points each and Ace cards are valued at 1 or 11 points depending upon the total points in the hand.") 
+    print("3. Each player starts with two cards, one of the dealer's cards is face down.") 
+    print("4. Player can either 'hit' this means the player will receive another card, or the player can 'stand' meaning he does not want any other card but the ones he has got now.")
+    print("5. Sometimes the dealer is allowed to hit until he has total cards that are above 17, dealers must stand if they have cards that are above 17") 
+    print("6. If both the dealer and player have the same total, the game is tied and players bet is given back.")
+    print("7. If a player is dealt an Ace and a cards worth ten points on the first two cards the player has a “Blackjack” which normally comes with 3 to 2 odds.") # To Do.
+    print("8. The deck is shuffled again when the number of cards in it is not sufficient- remember the cards that have been played.\n") 
+
 def deck_creation():
     cards = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
     deck = cards * 4 # Each deck has 4 copies of each card.
@@ -66,13 +73,13 @@ def main():
             
             # Table - Dealer shows only shows one card #
             print(f"[GAME] Your cards: {player_hand[0]}, {player_hand[1]}")
-            print(f"[GAME] Dealer cards: {dealer_hand[0]}\n")
+            print(f"[GAME] Dealer's cards: {dealer_hand[0]}\n")
             
             # Player Turn #
             busted = False
             while True:
                 hand_value = hand_value_calculation(player_hand)
-                print(f"[GAME] Your hand value is: {hand_value}")
+                print(f"[GAME] Your hand's value is: {hand_value}")
                 if hand_value > 21:
                     print(f"[GAME] You have busted!")
                     busted = True
@@ -113,8 +120,8 @@ def main():
             replay = input("[GAME] Do you want to play again? (yes/no) -> ").lower()
             if replay != 'yes':
                 break
-        elif choice == '2': # Rules - Add.
-            pass
+        elif choice == '2': # Rules.
+            rules()
         elif choice == '0':
             print("[GAME] Thank you for playing! Exiting...")
         else:
