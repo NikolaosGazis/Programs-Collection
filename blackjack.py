@@ -3,7 +3,7 @@ import random
 
 # Functions #
 def menu():
-    print("--- Game of 21 - Blackjack ---")
+    print("\n--- Game of 21 - Blackjack ---")
     print("1. Play")
     print("2. Rules")
     print("0. Exit\n")
@@ -136,7 +136,7 @@ def main():
             game(player_money, deck)
         elif choice == '2': # Rules.
             rules()
-        elif choice == '0':
+        elif choice == '0': # Exit.
             print("[GAME] Thank you for playing! Exiting...")
             break
         else:
